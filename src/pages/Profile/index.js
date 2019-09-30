@@ -1,9 +1,10 @@
 import React, { useRef, useState, useEffect } from 'react';
-import { ActivityIndicator } from 'react-native';
 import { useSelector, useDispatch } from 'react-redux';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import Background from '~/components/Background';
+
+import { signOut } from '~/store/modules/auth/actions';
 import { updateProfileRequest } from '~/store/modules/user/actions';
 
 import {
@@ -13,6 +14,7 @@ import {
     FormInput,
     SubmitButton,
     Separator,
+    LogoutButton,
 } from './styles';
 
 export default function Profile() {
@@ -48,6 +50,10 @@ export default function Profile() {
                 confirmPassword,
             }),
         );
+    }
+
+    function handleLogout() {
+        dispatch(signOut());
     }
 
     return (
@@ -120,6 +126,9 @@ export default function Profile() {
                     <SubmitButton loading={loading} onPress={handleSubmit}>
                         Update profile
                     </SubmitButton>
+                    <LogoutButton loading={loading} onPress={handleLogout}>
+                        Log out
+                    </LogoutButton>
                 </Form>
             </Container>
         </Background>
