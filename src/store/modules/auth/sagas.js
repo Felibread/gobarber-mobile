@@ -46,7 +46,7 @@ export function* signUp({ payload }) {
 
         // history.push('/');
     } catch (err) {
-        Alert.Alert('Fail to sign up. Verify your data.');
+        Alert.alert('Fail to sign up. Verify your data.');
         yield put(SignFailure());
     }
 }
