@@ -11,7 +11,7 @@ Bootcamp GoStack GoBarber
 # Mobile
 
 *First get the server up and running by following theses steps :point_right:
-**<a href="https://github.com/Felibread/gobarber-backend">Backend</a>***
+**<a href="https://github.com/felipe-jm/gobarber-backend">Backend</a>***
 
 ---
 **:warning:WARNING:warning:**<br>
@@ -36,7 +36,7 @@ react-native run-android
 
 ## Check out the frontend version! :pray:
 
-### <a href="https://github.com/Felibread/gobarber-frontend">Frontend</a>
+### <a href="https://github.com/felipe-jm/gobarber-frontend">Frontend</a>
 
 ---
 
